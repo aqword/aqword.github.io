@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Java Guide 阅读笔记 on aqword的博客</title>
+    <link>http://localhost:1313/series/java-guide-%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/</link>
+    <description>Recent content in Java Guide 阅读笔记 on aqword的博客</description>
+    <generator>Hugo -- 0.145.0</generator>
+    <language>zh-CN</language>
+    <lastBuildDate>Tue, 15 Feb 2022 13:39:27 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/series/java-guide-%E9%98%85%E8%AF%BB%E7%AC%94%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java Guide 阅读笔记（1）基础</title>
+      <link>http://localhost:1313/post/java-guide-base/</link>
+      <pubDate>Tue, 15 Feb 2022 13:39:27 +0800</pubDate>
+      <guid>http://localhost:1313/post/java-guide-base/</guid>
+      <description>&lt;h2 id=&#34;基础&#34;&gt;基础&lt;/h2&gt;
+&lt;h4 id=&#34;java-语言有哪些特点&#34;&gt;Java 语言有哪些特点?&lt;/h4&gt;
+&lt;p&gt;面向对象，单继承，跨平台&lt;/p&gt;
+&lt;h4 id=&#34;什么是字节码采用字节码的好处是什么&#34;&gt;什么是字节码?采用字节码的好处是什么?&lt;/h4&gt;
+&lt;p&gt;给jvm去执行的指令集合，好处是可以解决跨平台问题&lt;/p&gt;
+&lt;h4 id=&#34;为什么说-java-语言编译与解释并存&#34;&gt;为什么说 Java 语言“编译与解释并存”？&lt;/h4&gt;
+&lt;p&gt;源码到字节码是编译，字节码执行是解释&lt;/p&gt;
+&lt;h2 id=&#34;基本语法&#34;&gt;基本语法&lt;/h2&gt;
+&lt;h4 id=&#34;字符型常量和字符串常量的区别&#34;&gt;字符型常量和字符串常量的区别?&lt;/h4&gt;
+&lt;p&gt;字符型是char，单引号，字符串底层是char数组，双引号&lt;/p&gt;
+&lt;h4 id=&#34;标识符和关键字的区别是什么&#34;&gt;标识符和关键字的区别是什么？&lt;/h4&gt;
+&lt;p&gt;标识符是命名，关键字是解析语法&lt;/p&gt;
+&lt;h4 id=&#34;自增自减运算符&#34;&gt;自增自减运算符&lt;/h4&gt;
+&lt;p&gt;++a是先加再赋值，a++是先赋值再加&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java Guide 阅读笔记（2）集合</title>
+      <link>http://localhost:1313/post/java-guide-collection/</link>
+      <pubDate>Tue, 15 Feb 2022 13:39:27 +0800</pubDate>
+      <guid>http://localhost:1313/post/java-guide-collection/</guid>
+      <description>&lt;h2 id=&#34;java-集合概览&#34;&gt;Java 集合概览&lt;/h2&gt;
+&lt;h3 id=&#34;说说-list-set-queue-map-四者的区别&#34;&gt;说说 List, Set, Queue, Map 四者的区别？&lt;/h3&gt;
+&lt;p&gt;list有序可重复集合，set无序不可重复集合，queue是队列，有序可重复，map是键值对&lt;/p&gt;
+&lt;h3 id=&#34;集合框架底层数据结构总结&#34;&gt;集合框架底层数据结构总结&lt;/h3&gt;
+&lt;h4 id=&#34;list&#34;&gt;List&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;ArrayList：Object[]&lt;/li&gt;
+&lt;li&gt;LinkedList：链表&lt;/li&gt;
+&lt;li&gt;Vector：Object[]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;set&#34;&gt;Set&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;HashSet：底层HashMap&lt;/li&gt;
+&lt;li&gt;LinkedHashSet：LinkedHashMap&lt;/li&gt;
+&lt;li&gt;TreeSet：底层红黑树&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;queue&#34;&gt;Queue&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;PriorityQueue：Object[]&lt;/li&gt;
+&lt;li&gt;ArrayQueue：Object[]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;map&#34;&gt;Map&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;HashMap：数组+链表/红黑树&lt;/li&gt;
+&lt;li&gt;LinkedHashMap：数组+链表/红黑树+双向链表&lt;/li&gt;
+&lt;li&gt;TreeMap：红黑树&lt;/li&gt;
+&lt;li&gt;Hashtable：数组+链表&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;如何选用集合&#34;&gt;如何选用集合?&lt;/h2&gt;
+&lt;p&gt;是否重复，是否排序&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Java Guide 阅读笔记（3）数据库</title>
+      <link>http://localhost:1313/post/java-guide-db/</link>
+      <pubDate>Tue, 15 Feb 2022 13:39:27 +0800</pubDate>
+      <guid>http://localhost:1313/post/java-guide-db/</guid>
+      <description>&lt;h2 id=&#34;mysql-基础&#34;&gt;MySQL 基础&lt;/h2&gt;
+&lt;h3 id=&#34;存储引擎&#34;&gt;存储引擎&lt;/h3&gt;
+&lt;h4 id=&#34;存储引擎相关的命令&#34;&gt;存储引擎相关的命令&lt;/h4&gt;
+&lt;p&gt;&lt;code&gt;show engines;&lt;/code&gt;&lt;/p&gt;
+&lt;h3 id=&#34;myisam-和-innodb-的区别&#34;&gt;MyISAM 和 InnoDB 的区别&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;MyISAM只有表锁，InnoDB有表锁和行锁，默认行锁&lt;/li&gt;
+&lt;li&gt;MyISAM不支持事务，InnoDB有提交和回滚事务的能力（默认级别可重复读）&lt;/li&gt;
+&lt;li&gt;InnoDB支持数据库崩溃后的安全恢复&lt;/li&gt;
+&lt;li&gt;InnoDB支持MVCC（行锁升级版）&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;锁机制与-innodb-锁算法&#34;&gt;锁机制与 InnoDB 锁算法&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;InnoDB默认行锁&lt;/li&gt;
+&lt;li&gt;InnoDB三种行锁算法
+&lt;ul&gt;
+&lt;li&gt;Record Lock：记录锁，锁单行记录&lt;/li&gt;
+&lt;li&gt;Gap Lock：间隙锁，锁定范围，不含记录自身&lt;/li&gt;
+&lt;li&gt;Next-key Lock：Record Lock + Gap Lock，临键锁，包含记录自身&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;事务&#34;&gt;事务&lt;/h2&gt;
+&lt;h3 id=&#34;何为事务&#34;&gt;何为事务？&lt;/h3&gt;
+&lt;p&gt;一组操作，要么全部执行成功，要么全部执行失败&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

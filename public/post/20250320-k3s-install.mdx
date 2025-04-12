@@ -1,0 +1,84 @@
+---
+title: "k3s安装"
+date: "2025-03-20"
+description: "记录k3s安装及折腾过程"
+tags: ["k3s", "docker", "Linux"]
+---
+
+# k3s安装
+
+## 0x00 概述
+
+1. 环境：2台公网机器、1台内网机器，已使用wireguard组网
+
+内网机器为wsl，配置如下：
+```ini
+[wsl2]
+
+# 配置网络模式为镜像模式，网络将于宿主机相同
+networkingMode=mirrored
+# 更改将 DNS 请求从 WSL 代理到 Windows 的方式
+dnsTunneling=true
+
+# 如果设置为 true，则 Windows 防火墙规则以及特定于 Hyper-V 流量的规则可以筛选 WSL 网络流量
+firewall=true
+
+# 强制 WSL 使用 Windows 的 HTTP 代理信息, 默认为false 是否打开看个人的需要
+autoProxy=true
+
+# Sets amount of swap storage space to 8GB, default is 25% of available RAM
+swap=8GB
+
+# Sets swapfile path location, default is %USERPROFILE%\AppData\Local\Temp\swap.vhdx
+swapfile=C:\\wsl-swap.vhdx
+guiApplications=false
+memory=25769803776
+
+# 实验性功能配置
+[experimental]
+# 如果设置为 true，则任何新创建的 VHD 将自动设置为稀疏。
+sparseVhd=true
+
+# 仅当 wsl2.networkingMode 设置为 mirrored 时才适用。 如果设置为 True，将会允许容器通过分配给主机的 IP 地址连接到主机，或允许主机通过此方式连接到容器。 请注意，始终可以使用 127.0.0.1 环回地址 - 此选项也允许使用所有额外分配的本地 IP 地址。
+# 意味着局域网内别的设备可以通过宿主机ip访问容器
+hostAddressLoopback=true
+
+# 仅当 wsl2.networkingMode 设置为 mirrored 时才适用。 指定 Linux 应用程序可以绑定到哪些端口（即使该端口已在 Windows 中使用）。 通过此设置，应用程序能够仅侦听 Linux 中的流量端口，因此即使该端口在 Windows 上用于其他用途，这些应用程序也不会被阻止。 例如，WSL 将允许绑定到 Linux for Docker Desktop 中的端口 53，因为它只侦听来自 Linux 容器中的请求。 应在逗号分隔列表中设置格式，例如：3000,9000,9090
+# 默认为Null
+ignoredPorts=22
+
+```
+
+```meraid
+
+```
+
+
+
+
+```bash
+curl -sfL https://rancher-mirror.rancher.cn/k3s/k3s-install.sh | INSTALL_K3S_MIRROR=cn K3S_TOKEN=xxxxxx sh -s - server     --cluster-init     --tls-san=10.23.0.10     --advertise-address=10.23.0.10     --node-ip=10.23.0.10
+```
+
+k3s 配置
+```yaml
+cluster-init: true
+#server: "https://10.23.0.10:6443"
+token: "xxxxxx"
+write-kubeconfig: "/root/.kube/config"
+write-kubeconfig-mode: 644
+
+tls-san:
+  - 10.23.0.10
+  - 10.23.0.20
+
+advertise-address: 10.23.0.20
+node-ip: 10.23.0.20
+node-external-ip: 10.23.0.20
+
+flannel-backend: host-gw
+
+# 拉起rancher相关镜像
+system-default-registry: "registry.cn-hangzhou.aliyuncs.com"
+
+```

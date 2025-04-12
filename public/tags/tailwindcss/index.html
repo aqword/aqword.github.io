@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="robots" content="index, follow">
+<title>TailwindCSS | aqword的博客</title>
+<meta name="keywords" content="">
+<meta name="description" content="专注于IT互联网，包括但不限于Java、Golang、Python">
+<meta name="author" content="aqword">
+<link rel="canonical" href="http://localhost:1313/tags/tailwindcss/">
+<link crossorigin="anonymous" href="/assets/css/stylesheet.6da9a63d25a9608bca2f7f907a030e887a7dd3c3f3918e4cc113129361414bda.css" integrity="sha256-bammPSWpYIvKL3&#43;QegMOiHp908PzkY5MwRMSk2FBS9o=" rel="preload stylesheet" as="style">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
+<meta name="theme-color" content="#2e2e33">
+<meta name="msapplication-TileColor" content="#2e2e33">
+<link rel="alternate" type="application/rss+xml" href="http://localhost:1313/tags/tailwindcss/index.xml">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/tags/tailwindcss/">
+<noscript>
+    <style>
+        #theme-toggle,
+        .top-link {
+            display: none;
+        }
+
+    </style>
+    <style>
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --theme: rgb(29, 30, 32);
+                --entry: rgb(46, 46, 51);
+                --primary: rgb(218, 218, 219);
+                --secondary: rgb(155, 156, 157);
+                --tertiary: rgb(65, 66, 68);
+                --content: rgb(196, 196, 197);
+                --code-block-bg: rgb(46, 46, 51);
+                --code-bg: rgb(55, 56, 62);
+                --border: rgb(51, 51, 51);
+            }
+
+            .list {
+                background: var(--theme);
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-track {
+                background: 0 0;
+            }
+
+            .list:not(.dark)::-webkit-scrollbar-thumb {
+                border-color: var(--theme);
+            }
+        }
+
+    </style>
+</noscript><meta property="og:url" content="http://localhost:1313/tags/tailwindcss/">
+  <meta property="og:site_name" content="aqword的博客">
+  <meta property="og:title" content="TailwindCSS">
+  <meta property="og:description" content="专注于IT互联网，包括但不限于Java、Golang、Python">
+  <meta property="og:locale" content="zh-CN">
+  <meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TailwindCSS">
+<meta name="twitter:description" content="专注于IT互联网，包括但不限于Java、Golang、Python">
+
+</head>
+
+<body class="list" id="top">
+<script>
+    if (localStorage.getItem("pref-theme") === "dark") {
+        document.body.classList.add('dark');
+    } else if (localStorage.getItem("pref-theme") === "light") {
+        document.body.classList.remove('dark')
+    } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.body.classList.add('dark');
+    }
+
+</script>
+
+<header class="header">
+    <nav class="nav">
+        <div class="logo">
+            <a href="http://localhost:1313/" accesskey="h" title="aqword的博客 (Alt + H)">
+                    <img src="http://localhost:1313/aq_hu_69a3770b54227ed5.png" alt="" aria-label="logo"
+                        height="30">aqword的博客</a>
+            <div class="logo-switches">
+                <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
+                    <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                    <svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/search/" title="搜索 (Alt &#43; /)" accesskey=/>
+                    <span>搜索</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/archives/" title="归档">
+                    <span>归档</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/tags/" title="标签">
+                    <span>标签</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/about/" title="关于">
+                    <span>关于</span>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<main class="main"> 
+<header class="page-header"><div class="breadcrumbs"><a href="http://localhost:1313/">Home</a>&nbsp;»&nbsp;<a href="http://localhost:1313/tags/">Tags</a></div>
+  <h1>
+    TailwindCSS
+    <a href="/tags/tailwindcss/index.xml" title="RSS" aria-label="RSS">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" height="23">
+        <path d="M4 11a9 9 0 0 1 9 9" />
+        <path d="M4 4a16 16 0 0 1 16 16" />
+        <circle cx="5" cy="19" r="1" />
+      </svg>
+    </a>
+  </h1>
+</header>
+
+<article class="post-entry tag-entry"> 
+  <header class="entry-header">
+    <h2 class="entry-hint-parent">使用cursor开发博客系统
+    </h2>
+  </header>
+  <div class="entry-content">
+    <p>prompts：基于nextjs、mdx、tailwindcss、shancdui实现一个简洁风格的静态博客站点
+以下内容为Claude总结输出 项目概述 本项目是一个使用现代前端技术栈搭建的简约风格静态博客系统。整个开发过程由Cursor编辑器结合Claude 3.7 Sonnet AI模型完成，展示了AI辅助编程的高效性和实用性。
+技术栈 Next.js 15&#43;: 用于服务端渲染和静态站点生成 MDX: Markdown的扩展，支持在内容中嵌入React组件 Tailwind CSS: 实用优先的CSS框架，实现响应式设计 shadcn/ui: 基于Tailwind的组件库，提供了美观的UI组件 Contentlayer: 处理MDX内容，提供类型安全的内容数据 功能特点 简洁优雅的设计：采用极简主义设计风格，注重内容可读性 响应式布局：完美适配移动设备和桌面环境 暗色模式支持：自动适应系统偏好的暗色/亮色模式 MDX内容支持：可以在Markdown中嵌入React组件 静态生成：预渲染页面，提供极快的加载速度 SEO友好：为每个页面生成适当的元数据 系统架构 博客系统采用了以下结构：
+/app: Next.js的App Router结构 /posts: 存放所有博客文章（MDX格式） /app/components: 可复用组件 /app/posts: 文章列表和内容页面 /lib: 工具函数和共享逻辑 开发经验 整个博客系统是通过向Cursor编辑器（集成了Claude 3.7 Sonnet模型）提供简单的prompt开始构建的。AI能够理解需求，并生成完整的项目结构、组件和样式。
+在开发过程中，我们遇到了一些技术挑战，如：
+配置Contentlayer处理MDX文件 实现动态路由和静态生成 处理服务器组件和客户端组件之间的交互 解决Next.js动态路由中的参数处理问题 通过与AI的协作，这些问题都得到了高效解决。整个开发过程展示了AI辅助编程的潜力，特别是在快速构建现代web应用方面。
+后续改进 未来可以考虑添加以下功能：
+文章搜索功能 标签聚合页面 评论系统集成 访问统计 国际化支持 结论 使用Cursor和Claude 3.7 Sonnet构建这个博客系统，展示了AI辅助编程的强大能力。从初始prompt到功能完整的博客系统，整个过程高效且直观。这代表了软件开发的未来方向，即开发者与AI工具的协作将成为标准实践。
+</p>
+  </div>
+  <footer class="entry-footer"><span title='2025-03-21 00:00:00 +0000 UTC'>March 21, 2025</span>&nbsp;·&nbsp;1 min&nbsp;·&nbsp;aqword</footer>
+  <a class="entry-link" aria-label="post link to 使用cursor开发博客系统" href="http://localhost:1313/post/20250321-a-next-js-blog-generated-by-cursor-with-claude_3_7-sonnet/"></a>
+</article>
+    </main>
+    
+<footer class="footer">
+        <span>&copy; 2025 <a href="http://localhost:1313/">aqword的博客</a></span> · 
+
+    <span>
+        Powered by
+        <a href="https://gohugo.io/" rel="noopener noreferrer" target="_blank">Hugo</a> &
+        <a href="https://github.com/adityatelange/hugo-PaperMod/" rel="noopener" target="_blank">PaperMod</a>
+    </span>
+</footer>
+<a href="#top" aria-label="go to top" title="Go to Top (Alt + G)" class="top-link" id="top-link" accesskey="g">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6" fill="currentColor">
+        <path d="M12 6H0l6-6z" />
+    </svg>
+</a>
+
+<script>
+    let menu = document.getElementById('menu')
+    if (menu) {
+        menu.scrollLeft = localStorage.getItem("menu-scroll-position");
+        menu.onscroll = function () {
+            localStorage.setItem("menu-scroll-position", menu.scrollLeft);
+        }
+    }
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            var id = this.getAttribute("href").substr(1);
+            if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView({
+                    behavior: "smooth"
+                });
+            } else {
+                document.querySelector(`[id='${decodeURIComponent(id)}']`).scrollIntoView();
+            }
+            if (id === "top") {
+                history.replaceState(null, null, " ");
+            } else {
+                history.pushState(null, null, `#${id}`);
+            }
+        });
+    });
+
+</script>
+<script>
+    var mybutton = document.getElementById("top-link");
+    window.onscroll = function () {
+        if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
+            mybutton.style.visibility = "visible";
+            mybutton.style.opacity = "1";
+        } else {
+            mybutton.style.visibility = "hidden";
+            mybutton.style.opacity = "0";
+        }
+    };
+
+</script>
+<script>
+    document.getElementById("theme-toggle").addEventListener("click", () => {
+        if (document.body.className.includes("dark")) {
+            document.body.classList.remove('dark');
+            localStorage.setItem("pref-theme", 'light');
+        } else {
+            document.body.classList.add('dark');
+            localStorage.setItem("pref-theme", 'dark');
+        }
+    })
+
+</script>
+</body>
+
+</html>
