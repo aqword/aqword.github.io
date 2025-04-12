@@ -35,6 +35,10 @@ minify:
   disableXML: true
   # minifyOutput: true
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 outputs:
   home:
     - HTML
